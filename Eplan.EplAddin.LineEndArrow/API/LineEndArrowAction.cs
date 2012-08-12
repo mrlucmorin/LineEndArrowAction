@@ -23,9 +23,6 @@ namespace Eplan.EplAddin.LineEndArrow.API
         public bool Execute(ActionCallingContext ctx)
         {
 
-            ActionManager mgr = new ActionManager();
-            Eplan.EplApi.ApplicationFramework.Action act = mgr.FindAction("LineEndArrowAction");
-
             SelectionSet sel = new SelectionSet();
 
             List<Line> lines = sel.Selection.OfType<Line>().ToList();
